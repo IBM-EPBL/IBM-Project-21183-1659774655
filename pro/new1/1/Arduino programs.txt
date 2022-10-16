@@ -1,0 +1,121 @@
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(13,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+void loop()
+{
+  digitalWrite(13,HIGH);
+  Serial.println("LED ON");
+  delay(250);
+  digitalWrite(13,LOW);
+  Serial.println("LED OFF");
+  delay(250);
+ 
+  
+  digitalWrite(12,HIGH);
+  Serial.println("LED ON");
+  delay(250);
+  digitalWrite(12,LOW);
+  Serial.println("LED OFF");
+  delay(250);
+  
+  digitalWrite(11,HIGH);
+  Serial.println("LED ON");
+  delay(250);
+  digitalWrite(11,LOW);
+  Serial.println("LED OFF");
+  delay(250);
+}
+
+----------------------------
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(13,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(7,OUTPUT);
+}
+void loop()
+{
+  digitalWrite(13,1);
+  digitalWrite(10,0);
+  digitalWrite(7,0);
+  delay(250);
+  
+  digitalWrite(13,0);
+  digitalWrite(10,1);
+  digitalWrite(7,0);
+  delay(250);
+  
+  digitalWrite(13,0);
+  digitalWrite(10,0);
+  digitalWrite(7,1);
+  delay(250);
+}
+
+---------------------------
+
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(13,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(7,OUTPUT);
+}
+void loop()
+{
+  digitalWrite(13,1);
+  delay(500);
+  
+  digitalWrite(13,0);
+  digitalWrite(10,1);
+  delay(500);
+  
+  digitalWrite(10,0);
+  digitalWrite(7,0);
+  delay(500);
+  
+  digitalWrite(7,0);
+}
+
+-----------------------
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(2,INPUT);
+  pinMode(8,OUTPUT);
+}
+void loop()
+{
+  int a=digitalRead(2);
+  digitalWrite(8,1-a);
+  Serial.print("value ");
+  Serial.println(a);
+}
+  
+----------------------
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(2,INPUT);
+  pinMode(8,OUTPUT);
+}
+void loop()
+{
+  int a=digitalRead(2);
+  Serial.println(a);
+  if(a==1)
+    digitalWrite(8,0);
+  else
+    digitalWrite(8,1);
+}
+
+----------------------
+
