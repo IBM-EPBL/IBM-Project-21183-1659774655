@@ -1,8 +1,0 @@
-void setup()---first function to be executed ---executed only once
-Serial.begin()---establishes a serial communication between your Arduino board and another device via USB cable.
-baud rate---rate at which information is transferred in a communication channel.
-9600 baud---serial port is capable of transferring a maximum of 9600 bits per second.
-pinMode()---configure a specific pin to behave either as an input or an output.
-delay()---pause the execution of arduino program for a specific period ---in milliseconds.
-void loop()---where the bulk of arduino sketch is executed.
-digitalWrite()---to write a HIGH or a LOW value to a digital pin ---if the pin configured as OUTPUT,voltage-5V for HIGH,0V(ground) for LOW.
