@@ -1,0 +1,24 @@
+def haz(t, h):
+    if h >= 115:
+        if t > 50:
+            print("Hazardous Condition")
+        else:
+            print("High Humidity")
+    elif t >= 50:
+        print("High Temperature")
+    else:
+        print("Everything is Fine")
+
+
+while True:
+    import random
+    import times
+
+    a = random.randint(30, 100)
+    b = random.randint(70, 200)
+
+    print("\nTemperatur(C) = {a1}'C\nHumidity(F) = {b1} F".format(a1=a, b1=b))
+    time.sleep(0.5)
+    (haz(a, b))
+    time.sleep(1)
+    time.sleep(1)
